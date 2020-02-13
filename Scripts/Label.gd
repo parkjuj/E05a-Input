@@ -6,3 +6,6 @@ func _ready():
 
 func _physics_process(delta):
 	pass
+	var mouse_pos = get_viewport().get_mouse_position()
+	text = str(mouse_pos.x) + ", " + str(mouse_pos.y)
+	
